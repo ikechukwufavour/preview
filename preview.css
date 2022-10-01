@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+.row{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+.side{
+    height:400px;
+    width:400px;
+}
+.grace{
+    background-color:hsl(244, 38%, 16%) ;
+    text-align: center;
+    color:white;
+    height:400px;
+    width:400px;
+    padding: 30px;
+}
+.praise{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.fanta{
+    background-color:hsl(244, 38%, 16%) ;
+    text-align: center;
+    color:white;
+    margin: 10px;
+    margin-top: 5px;
+}
+.image{
+    width:100%;
+    height:400px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(0deg,  rgba(238, 130, 209, 0.454),rgba(238, 130, 238, 0.394)), url(lol.jpg);
+}
+
+p{
+    opacity:0.6;
+}
+span{
+    color:hsl(277, 64%, 61%);
+}
+@media(max-width:600px){
+     .grace, .praise{
+        height:500px;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+     .grace{
+        width:100%;
+        height:fit-content;
+    }
+}
+@media (max-width:540px){
+     .grace{
+        width:400px;
+     }
+}
